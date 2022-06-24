@@ -1,0 +1,326 @@
+/* VARIABLES */
+
+:root{
+  --main-border-color :#333333 ;
+  --main-bg-color : #fff;
+  --link-bg-color:#C9514C;
+  --bg-hover-color:#EA625C;
+  --span-bg-color:#DDDDDD;
+}
+
+/* GENERAL */
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.site-header{
+  margin-bottom: 79px;
+}
+
+.header-info{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.header-logo-img{
+  margin-right: auto;
+  width: 35px;
+  height: 42px;
+}
+
+.header-nav{
+  margin-left: auto;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item{
+  margin-right: 30px;
+}
+
+.nav-item:last-child{
+  margin-right: 40px;
+}
+
+.nav-item-link{
+  padding-bottom: 6px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main-border-color);
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-item-link:hover{
+  border-bottom: 3px solid var(--main-border-color);
+}
+
+.header-input{
+  width: 169px;
+  padding-bottom: 6px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  border: none;
+  border-bottom: 1px solid var(--main-border-color);
+  transform: rotate(0.16deg);
+}
+
+.hero{
+  border-bottom: 2px solid var(--span-bg-color);
+}
+
+
+.hero{
+  background-image: url("../images/apple-watch.png");
+  background-size: 587px 565px;
+  background-position: calc(50% + 600px) calc(50% + 0px);
+  background-repeat: no-repeat;
+}
+
+.hero-info{
+  width: 490px;
+  padding-top: 91px;
+  padding-bottom: 185px;
+}
+
+.hero-title, .adv-title,.control-health-title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.hero-text, .adv-text{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border-left: 3px solid #888888;
+}
+
+.hero-link, .adv-link, .control-health-link{
+  display: inline-block;
+  padding: 12px 39px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  background-color: var(--bg-hover-color);
+  color: var(--main-bg-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-link:hover{
+  background-color:  var(--link-bg-color);
+  transition: 0.3s ease;
+}
+
+.run-list{
+  display: flex;
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 140px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.run-item{
+  width: 280px;
+}
+
+.run-item:not(:last-child){
+  margin-right: 80px;
+}
+
+.run-item-title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.run-item-text{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--main-border-color);
+}
+
+.span-box{
+  display: flex;
+  align-items: center;
+}
+
+.span-box-item{
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--span-bg-color);
+}
+
+.span-box-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.run-link{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: var(--bg-hover-color);
+  text-decoration: none;
+}
+
+.run-link::before{
+  display: inline-block;
+  width: 40px;
+  margin-right: 10px;
+  border-top: 3px solid var(--bg-hover-color);
+  content: "";
+  background-position: center;
+}
+
+.run-link:hover::before{
+  width: 60px;
+  transition: 0.3s ease;
+}
+
+.adv{
+  margin-bottom: 70px;
+}
+
+.adv-box{
+  display: flex;
+  align-items: center;
+}
+
+.adv-info{
+  width: 490px;
+  margin-right: auto;
+}
+
+.adv-link:hover{
+  background-color:  var(--link-bg-color);
+}
+
+.control-health{
+  display: block;
+  background-image: url("../images/runners.jpg");
+  background-position: center;
+  background-size: cover;
+  content: "";
+}
+
+.control-health-info{
+  display: block;
+  width: 490px;
+  margin-left: auto;
+  padding: 240px 0;
+  color:var(--main-bg-color)
+}
+
+.control-health-title{
+  color: var(--main-bg-color);
+}
+
+.control-health-text{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border-left: 3px solid var(--main-bg-color);
+  transition: 0.3s ease;
+}
+
+.control-health-link:hover{
+  background-color: var(--link-bg-color);
+}
